@@ -1,0 +1,13 @@
+import { Routes } from '@angular/router';
+
+export const routes: Routes = [
+    {
+        path: 'user',
+        loadChildren: () => import('./user/users.module').then(m => m.UsersModule)
+    },
+    {
+        path: '',
+        redirectTo: 'user',
+        pathMatch: 'full'
+    }
+];
