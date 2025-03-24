@@ -1,0 +1,26 @@
+<div class="dashboard">
+    <header class="dashboard-header">
+      <h1>POS Dashboard</h1>
+      <button class="logout-btn" (click)="logout()">Logout</button>
+    </header>
+  
+    <div class="dashboard-grid">
+      <div class="card">
+        <h2>Total Sales</h2>
+        <p>${{ totalSales }}</p>
+      </div>
+      <div class="card">
+        <h2>Orders</h2>
+        <p>{{ orders }}</p>
+      </div>
+      <div class="card">
+        <h2>Customers</h2>
+        <p>{{ customers }}</p>
+      </div>
+      <div class="card">
+        <h2>Stock Items</h2>
+        <p>{{ stockItems }}</p>
+      </div>
+    </div>
+  </div>
+  
